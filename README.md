@@ -29,7 +29,7 @@ Compatibility
 
 * G350 / Pan4Elec — V3 Beta: Tested and working.
 * ArkOS: Not yet verified.
-* DARKOS: Not yet verified.
+* DARKOS: Tested — the original Halo CE port does not launch and returns directly to EmulationStation. Controller mapping could not be tested.
 * Knulli: Not yet verified.
 * Other Linux custom firmwares: Not yet verified.
 
