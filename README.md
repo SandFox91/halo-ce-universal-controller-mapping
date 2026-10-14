@@ -1,76 +1,96 @@
 Halo CE — Universal Controller Mapping 🎮
 
-Experimental controller mapping for Linux retro handhelds
+Controller mapping correction for Linux retro handhelds.
 
-Project maintained by SandFox91
+Project maintained by SandFox91.
 
 Overview
 
 This community project aims to improve controller mapping for Halo: Combat Evolved on Linux-based retro handheld consoles.
 
-The main objective is simple: physical A, B, X and Y buttons should correspond to their respective Halo actions, without unwanted button inversion.
+The objective is to correct unwanted button inversions and provide consistent controller behavior.
+
+V3 Beta has been tested and confirmed working on the G350 running Pan4Elec.
+
+Compatibility with other custom firmwares still requires community testing.
 
 Controller Mapping
 
-Physical button	Expected Halo input
-A	A
-B	B
-X	X
-Y	Y
-L3	Preserve existing function
-MENU + START	Preserve existing function
+The V3 Beta patch aims to provide the following behavior:
+
+* A: Correct A button mapping.
+* B: Correct B button mapping.
+* X: Correct X button mapping.
+* Y: Correct Y button mapping.
+* L3: Preserve the existing function.
+* MENU + START: Preserve the existing function.
 
 Compatibility
 
-Device / Firmware	Status
-G350 / Pan4Elec	V2 reported tested
-G350 / Pan4Elec V3	Beta — testing required
-ArkOS	Not yet verified
-DARKOS	Not yet verified
-Knulli	Not yet verified
+* G350 / Pan4Elec — V3 Beta: Tested and working.
+* ArkOS: Not yet verified.
+* DARKOS: Not yet verified.
+* Knulli: Not yet verified.
+* Other Linux custom firmwares: Not yet verified.
 
-Warning: Universal compatibility has not been established. Test the patch on your specific device and firmware before relying on it.
+Universal compatibility has not been established. Please report results only from devices and firmware versions you have actually tested.
 
-Installation
+Installation — Pan4Elec G350
 
-1. Back up your original sdl_mapping.py file.
-2. Obtain the patch version intended for testing.
-3. Review its instructions and compatibility requirements.
-4. On supported installations, replace the appropriate mapping file.
-5. Restart Halo CE.
-6. Test A/B/X/Y, L3 and MENU + START.
-7. Restore your backup if problems occur.
+1. Download the V3 Beta ZIP archive from the GitHub Releases page.
+2. Extract the ZIP archive.
+3. Open the Halo CE launcher folder on your G350.
+4. Make a backup of the original sdl_mapping.py file, if present.
+5. Copy the V3 Beta sdl_mapping.py file into the Halo CE launcher folder.
+6. Replace the original file if prompted.
+7. Launch Halo CE.
+8. Test the A, B, X and Y buttons, L3 and MENU + START.
 
-Do not install an unverified patch on an unsupported firmware without checking its controller configuration.
+If any problems occur, restore your original sdl_mapping.py file.
+
+Important: These installation instructions are for the G350 running Pan4Elec. Other firmwares may require different installation procedures.
 
 Languages / Langues / Idiomas / Sprachen / Языки
 
-English: Experimental controller mapping correction for Halo CE. Back up the original file before installation.
+English: Halo CE controller mapping correction. V3 Beta tested and working on G350 / Pan4Elec. Back up the original file before installation.
 
-Français : Correctif expérimental des commandes de Halo CE. Sauvegardez le fichier original avant installation.
+Français : Correctif des commandes de Halo CE. V3 Beta testée et fonctionnelle sur G350 / Pan4Elec. Sauvegardez le fichier original avant installation.
 
-Español: Corrección experimental de los controles de Halo CE. Guarda una copia del archivo original antes de instalar.
+Español: Corrección de los controles de Halo CE. V3 Beta probada y funcional en G350 / Pan4Elec. Guarda una copia del archivo original antes de instalar.
 
-Deutsch: Experimentelle Controller-Anpassung für Halo CE. Sichere die Originaldatei vor der Installation.
+Deutsch: Controller-Anpassung für Halo CE. V3 Beta auf G350 / Pan4Elec getestet und funktionsfähig. Sichere die Originaldatei vor der Installation.
 
-Русский: Экспериментальное исправление управления для Halo CE. Перед установкой сохраните резервную копию исходного файла.
+Русский: Исправление управления Halo CE. V3 Beta протестирована и работает на G350 / Pan4Elec. Перед установкой сохраните резервную копию исходного файла.
+
+Community Testing
+
+Community testing is welcome, especially from users running ArkOS, DARKOS, Knulli and other Linux custom firmwares.
+
+When reporting your results, please include:
+
+* Device model.
+* Firmware name and version.
+* Patch version tested.
+* Whether A, B, X and Y work correctly.
+* Whether L3 and MENU + START retain their original functions.
+* Any unexpected behavior.
+
+Report issues here:
+
+https://github.com/SandFox91/halo-ce-universal-controller-mapping/issues
 
 Credits
 
-Original Halo CE port: kirklandsig/halo-ce-anbernic-rg35xx
+Original Halo CE port:
+
+https://github.com/kirklandsig/halo-ce-anbernic-rg35xx
 
 Controller mapping adaptation and community testing: SandFox91.
 
 This is an independent community project and is not an official Halo release.
 
-Community Testing
-
-Feedback is welcome, especially from ArkOS, DARKOS, Knulli and other Linux handheld users.
-
-Please include your device model, firmware version, tested patch version and button test results when reporting issues.
-
 Release Status
 
-V3 — Experimental Beta
+V3 Beta — Tested and working on Pan4Elec G350.
 
-Further device testing and verification are required before a stable release.
+Additional testing on other devices and firmwares is required before a stable release.
